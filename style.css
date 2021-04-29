@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(43, 40, 40);
+}
+.fill{
+    background-image: url('10247268_10153034609080619_4614388209400431285_n.jpg');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.empty{
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: 3px gray soild;
+    background-color: aquamarine;
+}
+.hold{
+    border: solid rgb(155, 155, 155) 4px;
+}
+.hovered{
+    background:  wheat;
+    border-style: dashed;
+}
+.invisible{
+    display: none;
+}

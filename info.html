@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./radon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>info</title>
+    <style>
+         body{
+            font-family: monospace;
+        }
+       nav{
+           top: 0;
+           left: 0;
+       }
+       section{
+           display: flex;
+           justify-content: center;
+           
+       }
+      span{
+          align-self: flex-start;
+          font-size: 1.4rem;
+      }
+      .calender{
+          position: relative;
+          right: 30vw;
+          font-size: 1rem;
+          line-height: 40px;
+      }
+      .calender li:nth-child(1){
+          font-size: 1.04rem;
+          font-weight: bold;
+        }
+        .calender li:nth-child(3){
+            font-size: 1.04rem;
+            font-weight: bold;
+            
+        }
+        .calender li:nth-child(5){
+            font-weight: bold;
+            font-size: 1.04rem;
+
+      }
+      .li-dot{
+          list-style: none;
+      }
+       section div:nth-child(2) img{
+           position: relative;
+           transform: rotate(100deg);
+           animation: img 10s infinite alternate-reverse;
+          
+       }
+       section h2{
+           position: relative;
+           top: -23vh;
+           left: -15.4vw;
+           cursor: pointer;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 1rem;
+       }
+       
+       main{
+           background-image: url('photo-2.jpg');
+           background-clip: border-box;
+            background-size: cover;
+            height: calc(85vh);
+           width: 100%;
+           position: static;
+           
+       }
+       main .info-left{
+           float: right;
+           height: 85vh;
+           width: 51%;
+           background-color: rgba(127, 246, 255, 0.658);
+           display: flex;
+           text-align: center;
+           align-items: center;
+           line-height: 35px;
+           font-size: 1.5rem;
+           backdrop-filter: blur(2.4rem);
+       }
+       main .info-left div h2{
+          position: relative;
+           top: -20px;
+       }
+       main .info-left div{
+           
+           padding-left: 20px;
+       }
+
+       @keyframes img{
+        from{
+            transform: translate3d(20px) rotate(100deg);
+        }
+        to{
+            transform: translate3d(-20px) rotate(120deg);
+
+        }
+       }
+
+       @media(max-width: 600px){
+
+    main .info-left {
+        position: absolute;
+        float: none;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 110% 53%, 0 90%);
+        font-size: 1.2rem;
+        
+    }
+    main .info-left div{
+        position: absolute;
+        top: 95px;
+    }
+}
+    </style>
+</head>
+<body>
+        <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars">&plus;</i>
+                </label>
+                <label for="" class="logo">Radon</label>
+                <ul>
+                   
+                    <li><a  href="radon.html" style="cursor: pointer;">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active"  href="#">Info</a></li>
+                </ul>
+        </nav>
+    
+        <section class="time-table">
+            <span class="time">Time for Classess</span>
+            <div style="line-height: 30px;">
+                <h2>Mondays - Fridays</h2>
+            </div>
+            
+            <ul class="calender">
+                <li>Morning session</li>
+                <li class="li-dot">09:00am - 11:30am</li>
+                <li>Afternoon session</li>
+                <li class="li-dot">12:00pm - 02:00pm</li>
+                <li>Evening session</li>
+                <li class="li-dot">02:30pm - 05:30pm</li>
+                
+            </ul>
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                
+                <img src="./kisspng-viamso-srl-dance-sport-potaissa-turda-microsoft-of-conference-room-reservation-5b280853aedbf9.5169928515293502277162.png" alt="img" height="290px" width="310px">
+            </div>
+            
+        </section>
+        <main>
+            <div class="info-left">
+                <div>
+                    <h2>Project Typing</h2>
+                    <p>Are you a student, who needs a project topic? Or wants to type a project</p>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
